@@ -87,6 +87,14 @@ title{
       flex: 1;
 }
 
+.item3{
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  background-color: #ccffcc;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+}
+
 section {
     margin: 2em 0;
 }
