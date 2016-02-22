@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>WashU Student Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery.modal.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  </head>
+
+  <!-- Modals for form here -->
+  <div id="img1" style="display:none;">
+    <h2>Submit a Comment</h2>
+
+    <form action="http://formspree.io/gvenezia@wustl.edu" method="POST">
+      <p>Is there anything you wish you had known when you first came to WashU?</p>
+    <fieldset>
+      <div>
+        <label>year:</label>
+        <input type="radio" name="type" value="freshman from US"/>freshman from US
+        <input type="radio" name="type" value="transfer student"/>transfer student
+        <input type="radio" name="year" value="international student"/>international student
+        <input type="radio" name="year" value="other"/>other
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div>
+        <textarea name="review" rows="4" cols="50"> your advice </textarea>
+      </div>
+    </fieldset>
+      <div>
+        <input type="submit" value="Send">
+      </div>
+    </form>
+  </div>
+  <!-- Modal ends -->
+
+<body>
+<!-- Heading -->
+  <div class="container">
+      <section class="page-header">
+          <h1 class="project-name">---------------- Majors ------------------</h1>
+          <h2 class="project-tagline">X% of WashU students come in undecided. Don't let time make the choice for you.
+                                       Explore the different options below.</h2>
+       </section>
+  </div>
+  <!--Heading End -->
+
+<!--Content-->
+<div class="flex-container2">
+  <div class="flex-item item1">
+    <h2>School of Arts and Sciences <a href="#img1" rel="modal:open" class="button">Submit a Comment</a></h2>
+       <p>Most popular majors: Biology, x, x</p>
+       <h4>Question</h4>
+       <p>Answer</p>
+    <hr>
+    <h2>Olin School of Business <a href="#img1" rel="modal:open" class="button">Submit a Comment</a></h2>
+       <p>Most popular majors: Finance, x, x</p>
+       <h4>Question</h4>
+       <p>Answer</p>
+  </div>
+</div>
+<!--Content End-->
+
+<div>
+    <footer class="site-footer">
+      <hr>
+      <p>Copyright 2016 Anya Venezia.</p>
+    </footer>
+    <!-- JavaScript; Do not edit below -->
+      <script src="js/jquery-1.12.0.min.js"></script>
+      <script src="js/jquery.modal.min.js"></script>
+</div>
+
+  </body>
+</html>
